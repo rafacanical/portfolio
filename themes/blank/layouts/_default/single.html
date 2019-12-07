@@ -9,13 +9,14 @@
                 <time>{{ .Date.Format "January 2, 2006" }}</time>
             {{ end }}
             {{ with .Params.tags }}
-			<div>
-				<ul id="tags">
-					{{ range . }}
-					<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+				<div class="tags">
+					{{ range $i, $e := . }}
+						{{ if $i }}
+						<span>, </span>
+						{{ end }}
+						<a class="tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
 					{{ end }}
-				</ul>
-			</div>
+				</div>
 			{{ end }}
 			<div>
 				{{ template "_internal/disqus.html" . }}

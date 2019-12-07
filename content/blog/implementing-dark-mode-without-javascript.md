@@ -41,7 +41,7 @@ The default light mode basically is a white background with black text, just a s
 
 As you may already guessed, we will use the `:checked` pseudo-selector to achieve the toggle effects. We need to differentiate the styles when the input is checked and when it isn't. By default when the input is not checked it means we are currently viewing the light mode, when it is checked we are suposed to view the dark mode.
 
-```CSS
+```css
 #toggleMode:checked ~ #container{
     --bg: #000000;
     --text: #FFFFFF;

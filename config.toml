@@ -9,6 +9,17 @@ paginate = 10
     Description = "Most of the time backend developer, and occasionally a creative."
     ShowDatesOnPosts = true
 
+[markup]
+    [markup.highlight]
+        codeFences = true
+        hl_Lines = ""
+        lineNoStart = 1
+        lineNos = false
+        lineNumbersInTable = true
+        noClasses = true
+        style = "solarized-light"
+        tabWidth = 4
+
 [menu]
     [[menu.main]]
         identifier = "github"

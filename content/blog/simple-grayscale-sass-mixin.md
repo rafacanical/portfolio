@@ -27,7 +27,7 @@ As you can see, first we declare the mixin, I’ve named it grayscale_element. W
 
 Your preprocessor compiler, will output something like this:
 
-```scss
+```css
 .grayscale {
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
@@ -40,7 +40,6 @@ Your preprocessor compiler, will output something like this:
     -moz-filter: grayscale(0);
     filter: grayscale(0);
 }
-
 ```
 
 Now, for the final touch you just have to apply it to some image, by doing the following:
