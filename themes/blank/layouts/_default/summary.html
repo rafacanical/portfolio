@@ -1,0 +1,19 @@
+<article class="home-post">
+    <div class="date">
+        <time>{{ .Date.Format "January 2, 2006" }}</time>
+    </div>
+    <div class="content">
+        <div class="tags">
+            {{ range $i, $e := .Params.tags }}
+                {{ if $i }}
+                <span>, </span>
+                {{ end }}
+                <a href="{{ "/tags/" | relLangURL }}{{ $e | urlize }}" class="tag">{{ $e }}</a>
+            {{ end }}
+        </div>
+        <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+        <div class="summary">
+            {{ .Summary }}
+        </div>
+    </div>
+</article>

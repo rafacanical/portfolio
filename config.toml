@@ -1,0 +1,29 @@
+baseURL = "http://rafmrs.com/"
+languageCode = "en-gb"
+title = "Rafael Morais"
+theme = "blank"
+paginate = 10
+
+[params]
+    AuthorName = "Rafael Morais"
+    Description = "Most of the time backend developer, and occasionally a creative."
+    ShowDatesOnPosts = true
+
+[menu]
+    [[menu.main]]
+        identifier = "github"
+        name = "Github"
+        url = "https://github.com/rafamrs"
+        weight = 70
+
+    [[menu.main]]
+        identifier = "twitter"
+        name = "Twitter"
+        url = "https://twitter.com/rafmrs_"
+        weight = 80
+
+    [[menu.main]]
+        identifier = "linked-in"
+        name = "LinkedIn"
+        url = "https://www.linkedin.com/in/rafmrs"
+        weight = 90

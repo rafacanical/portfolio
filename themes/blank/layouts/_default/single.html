@@ -1,0 +1,25 @@
+{{ define "main" }}
+	<main>
+		<article class="single-article">
+            <h1>{{ .Title }}</h1>
+			<div class="summary">
+				{{ .Content }}
+            </div>
+            {{ if ne .Params.showthedate false }}
+                <time>{{ .Date.Format "January 2, 2006" }}</time>
+            {{ end }}
+            {{ with .Params.tags }}
+			<div>
+				<ul id="tags">
+					{{ range . }}
+					<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+					{{ end }}
+				</ul>
+			</div>
+			{{ end }}
+			<div>
+				{{ template "_internal/disqus.html" . }}
+			</div>
+		</article>
+	</main>
+{{ end }}
