@@ -13,7 +13,12 @@
         </div>
         <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
         <div class="summary">
-            {{ .Summary }}
+            {{ if gt (len .Summary) 240 }}
+                {{slicestr .Summary 0 240}}...
+            {{ end }}
+            {{ if le (len .Summary) 240 }}
+                <p>{{ .Summary }}</p>
+            {{ end }}
         </div>
     </div>
 </article>

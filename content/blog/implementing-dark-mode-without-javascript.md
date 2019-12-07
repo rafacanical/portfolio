@@ -1,8 +1,8 @@
 ---
 title: "Implementing Dark Mode without Javascript"
 date: 2019-08-23T15:00:15+01:00
-draft: false
 tags: ["Styling", "Dark Mode"]
+draft: false
 ---
 
 Why do something like this? Well, its simple, just for the fun of it. You might arguee that everybody has scripts enabled in the browser and I agree with you, so, once again, I did this just for the fun of it and to show, what is to me, the best way to implement a dark mode toggler (in terms of stylesheets).

@@ -30,11 +30,17 @@ article.home-post .tags{color:#999;margin-bottom:10px}
 footer{text-align:right;font-size:12px;margin-top:60px}
 footer a{color:#777;text-decoration:none}
 footer a:hover{color:#086654;text-decoration:underline}
-ul{padding-left:20px}
+ul, ol{padding-left:20px}
 .single-article time{font-family:monospace;color:#999;font-size:16px}
 .single-article h1{font-size:32px}
-.single-article h2, .single-article h3, .single-article h4, .single-article h5, .single-article h6{color:#333}
+.single-article h1, .single-article h2, .single-article h3, .single-article h4, .single-article h5, .single-article h6{color:#333}
 pre{padding:20px !important;background-color:#2E3440 !important;border-radius:5px;font-size:16px}
+blockquote{color:#bbb !important;border-left:4px solid #ddd;margin-left:0;padding-left:15px}
+p code{background-color:#D8DEE9;color:#2E3440;padding:2px 4px;border-radius:2px;font-size:14px}
+hr{border:0;height:2px;background-color:#D8DEE9;margin:20px 0;display:block}
+table{width:100%;border-collapse: collapse}
+th, td{border:1px solid #D8DEE9;padding:5px 10px}
+tr:nth-child(odd) td{background:rgba(216, 222, 233, 0.432)}
 /*Responsive*/
 @media only screen and (max-width: 600px) {
     header nav li{margin-bottom:10px}
