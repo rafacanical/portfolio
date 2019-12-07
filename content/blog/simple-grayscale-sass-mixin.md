@@ -1,7 +1,7 @@
 ---
 title: "Simple grayscale SASS mixin"
 date: 2019-03-16T15:00:15+01:00
-draft: true
+draft: false
 tags: ["Styling", "SASS"]
 ---
 
