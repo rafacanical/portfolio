@@ -34,7 +34,7 @@ ul{padding-left:20px}
 .single-article time{font-family:monospace;color:#999;font-size:16px}
 .single-article h1{font-size:32px}
 .single-article h2, .single-article h3, .single-article h4, .single-article h5, .single-article h6{color:#333}
-.highlight pre{padding:20px !important;border-radius:5px;font-size:16px}
+pre{padding:20px !important;background-color:#2E3440 !important;border-radius:5px;font-size:16px}
 /*Responsive*/
 @media only screen and (max-width: 600px) {
     header nav li{margin-bottom:10px}
