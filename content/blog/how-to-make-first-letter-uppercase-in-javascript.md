@@ -36,4 +36,4 @@ capitalize(0)        // ''
 capitalize({})       // ''
 ```
 
-In this function you can notice that I used `s[0]` instead of `s.charAt(0)` but use this only if you are not targeting older versions of IE.visual
+In this function you can notice that I used `s[0]` instead of `s.charAt(0)` but use this only if you are not targeting older versions of IE.
