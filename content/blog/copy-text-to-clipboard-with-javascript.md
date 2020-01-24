@@ -1,6 +1,6 @@
 ---
 title: "Copy text to clipboard with Javascript"
-date: 2020-01-24T16:02:52+01:00
+date: 2020-01-24T10:02:52+01:00
 tags: ["JavaScript", "Tips"]
 draft: false
 ---
