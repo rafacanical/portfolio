@@ -5,7 +5,7 @@ showthedate: false
 weight: "10"
 menu:
   main:
-    weight: 10
+    weight: 3
 
 ---
 ![](https://i.imgur.com/nAW2JbF.png)

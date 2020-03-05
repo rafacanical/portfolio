@@ -1,11 +1,13 @@
 ---
-title: "Contacts"
-date: 2019-12-05T14:48:30+01:00
+title: Contacts
+date: 2019-12-05T13:48:30.000+00:00
 showthedate: false
-menu: "main"
-weight: 100
----
+weight: "100"
+menu:
+  main:
+    weight: 1
 
+---
 You can reach me by any of my social networks. 
 Or by email at rafaelcanical[at]gmail.com.
 

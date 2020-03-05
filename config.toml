@@ -1,40 +1,33 @@
 baseURL = "http://rafmrs.com/"
 languageCode = "en-gb"
-title = "Rafael Morais"
-theme = "blank"
 paginate = 10
-
+theme = "blank"
+title = "Rafael Morais"
+[markup.highlight]
+codeFences = true
+hl_Lines = ""
+lineNoStart = 1
+lineNos = false
+lineNumbersInTable = true
+noClasses = true
+style = "solarized-light"
+tabWidth = 4
+[[menu.main]]
+identifier = "linked-in"
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/rafmrs"
+weight = 6
+[[menu.main]]
+identifier = "twitter"
+name = "Twitter"
+url = "https://twitter.com/rafmst"
+weight = 5
+[[menu.main]]
+identifier = "github"
+name = "Github"
+url = "https://github.com/rafmst"
+weight = 4
 [params]
-    AuthorName = "Rafael Morais"
-    Description = "Most of the time backend developer, and occasionally a creative."
-    ShowDatesOnPosts = true
-
-[markup]
-    [markup.highlight]
-        codeFences = true
-        hl_Lines = ""
-        lineNoStart = 1
-        lineNos = false
-        lineNumbersInTable = true
-        noClasses = true
-        style = "solarized-light"
-        tabWidth = 4
-
-[menu]
-    [[menu.main]]
-        identifier = "github"
-        name = "Github"
-        url = "https://github.com/rafamrs"
-        weight = 70
-
-    [[menu.main]]
-        identifier = "twitter"
-        name = "Twitter"
-        url = "https://twitter.com/rafmrs_"
-        weight = 80
-
-    [[menu.main]]
-        identifier = "linked-in"
-        name = "LinkedIn"
-        url = "https://www.linkedin.com/in/rafmrs"
-        weight = 90
+AuthorName = "Rafael Morais"
+Description = "Most of the time backend developer, and occasionally a creative."
+ShowDatesOnPosts = true
