@@ -5,7 +5,7 @@ showthedate: false
 weight: "100"
 menu:
   main:
-    weight: 1
+    weight: 6
 
 ---
 You can reach me by any of my social networks. 
