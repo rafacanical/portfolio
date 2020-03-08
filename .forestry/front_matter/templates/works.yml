@@ -2,13 +2,21 @@
 label: Works
 hide_body: true
 fields:
-- name: title
-  type: text
+- name: work
+  type: field_group_list
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: image
+    type: file
+    config:
+      maxSize: 250
+    label: Image
   config:
-    required: false
-  label: Title
-- name: image
-  type: file
-  config:
-    maxSize: 250
-  label: Image
+    min: 
+    max: 
+    labelField: 
+  label: Work
