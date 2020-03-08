@@ -41,6 +41,9 @@ hr{border:0;height:2px;background-color:#D8DEE9;margin:20px 0;display:block}
 table{width:100%;border-collapse: collapse}
 th, td{border:1px solid #D8DEE9;padding:5px 10px}
 tr:nth-child(odd) td{background:rgba(216, 222, 233, 0.432)}
+.images-row {display: flex}
+.images-row img{display:inline-block;width:31%;margin-right:3%;margin-bottom:3%}
+.images-row img:last-child{margin-right:0%}
 /*Responsive*/
 @media only screen and (max-width: 600px) {
     header nav li{margin-bottom:10px}
@@ -48,4 +51,6 @@ tr:nth-child(odd) td{background:rgba(216, 222, 233, 0.432)}
     article.home-post .date{width:100%}
     .pagination{display:block}
     .pagination .empty{width:100%}
+    .images-row {display: block}
+    .images-row img{display:block;width:100%;margin-right:0}
 }

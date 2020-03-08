@@ -9,7 +9,7 @@ menu:
 
 ---
 
-![O Mal Disposto](/static/uploads/o_mal_disposto.jpg)
-
-![O Cultivado](/static/uploads/o_cultivado.jpg)
-
+<div class="images-row">
+    <img src="/uploads/o_mal_disposto.jpg">
+    <img src="/uploads/o_cultivado.jpg">
+</div>

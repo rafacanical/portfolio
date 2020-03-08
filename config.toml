@@ -31,3 +31,6 @@ weight = 4
 AuthorName = "Rafael Morais"
 Description = "Most of the time backend developer, and occasionally a creative."
 ShowDatesOnPosts = true
+
+[markup.goldmark.renderer]
+unsafe= true
