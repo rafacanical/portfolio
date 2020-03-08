@@ -1,6 +1,6 @@
 ---
 label: Works
-hide_body: true
+hide_body: false
 fields:
 - name: work
   type: field_group_list
