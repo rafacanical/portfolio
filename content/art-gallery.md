@@ -1,4 +1,7 @@
 +++
+[menu.main]
+name = "Art Gallery"
+weight = 3
 [[work]]
 image = "/uploads/O Mal Disposto.jpg"
 title = "O Mal Disposto"
