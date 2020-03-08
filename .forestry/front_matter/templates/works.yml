@@ -20,5 +20,3 @@ fields:
     max: 
     labelField: 
   label: Work
-pages:
-- content/art-gallery.md
