@@ -1,7 +1,7 @@
 {{ define "main" }}
 	<main>
         <div class="intro">
-            <script src="https://gist.github.com/rafamrs/cbd1f949e1824dc522d4a4fc20d04a62.js"></script>
+		<script src="https://gist.github.com/rafmst/cbd1f949e1824dc522d4a4fc20d04a62.js"></script>
         </div>
 		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
 		{{ range $paginator.Pages }}
