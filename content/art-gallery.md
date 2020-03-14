@@ -10,6 +10,7 @@ menu:
 ---
 
 <div class="images-row">
+    <img src="/uploads/bella.jpg">
     <img src="/uploads/o_mal_disposto.jpg">
     <img src="/uploads/o_cultivado.jpg">
 </div>
