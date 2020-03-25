@@ -10,12 +10,11 @@ menu:
 ---
 
 <div class="images-row">
+    <img src="/uploads/donut.png">
     <img src="/uploads/sahara.png">
-    <img src="/uploads/observatory.png">
     <img src="/uploads/musa.png">
 </div>
 <div class="images-row">
+    <img src="/uploads/observatory.png">
     <img src="/uploads/bella.jpg">
-    <img src="/uploads/o_mal_disposto.jpg">
-    <img src="/uploads/o_cultivado.jpg">
 </div>
