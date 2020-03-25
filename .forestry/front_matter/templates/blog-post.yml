@@ -11,3 +11,5 @@ fields:
 - type: list
   name: tags
   label: tags
+pages:
+- content/blog/programatically-change-class-on-vue-js-elements.md
