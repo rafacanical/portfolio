@@ -1,0 +1,28 @@
+---
+label: Art post
+hide_body: true
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: title
+- name: type
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - sketch
+    - digital
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: type
+- name: file
+  type: file
+  config:
+    maxSize: 250
+  label: file
