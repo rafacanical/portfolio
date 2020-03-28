@@ -10,6 +10,11 @@ menu:
 ---
 
 <div class="images-row">
+    <img src="/uploads/sadpenguin.png">
+    <img src="/uploads/frenchbananas.png">
+    <img src="/uploads/engarrafado.png">
+</div>
+<div class="images-row">
     <img src="/uploads/donut.png">
     <img src="/uploads/sahara.png">
     <img src="/uploads/musa.png">
