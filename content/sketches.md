@@ -6,9 +6,12 @@ weight: "30"
 menu:
   main:
     weight: 3
----
 
+---
 <div class="images-row">
+  	<div class="responsive-img">
+      <img src="/uploads/FD17E53D-7591-498A-888B-C9129B0F989D.jpeg" />
+    </div>
     <div class="responsive-img">
         <img src="/uploads/musa.jpg">
     </div>
