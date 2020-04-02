@@ -1,6 +1,7 @@
 ---
-label: Sketches
+label: Sketch
 hide_body: true
+display_field: title
 fields:
 - type: datetime
   name: date
