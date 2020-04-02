@@ -12,6 +12,11 @@ sections:
   create: all
   match: "**/*"
 - type: directory
+  path: content/sketches
+  label: Sketches
+  create: documents
+  match: "**/*"
+- type: directory
   path: content
   label: Pages
   create: all
