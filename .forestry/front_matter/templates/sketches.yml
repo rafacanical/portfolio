@@ -1,0 +1,10 @@
+---
+label: Sketches
+hide_body: true
+fields:
+- type: datetime
+  name: date
+  label: date
+- type: file
+  name: image
+  label: image
