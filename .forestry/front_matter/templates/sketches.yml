@@ -15,6 +15,7 @@ fields:
     required: false
   label: title
 pages:
+- content/sketches/doodles.md
 - content/sketches/musa.md
 - content/sketches/observatory.md
 - content/sketches/pennpen.md
