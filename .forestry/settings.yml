@@ -21,16 +21,12 @@ sections:
 - type: document
   path: content/about.md
   label: About
-  match: "**/*"
-  read_only: false
 - type: document
   path: content/projects.md
   label: Projects
-  match: "**/*"
 - type: document
   path: content/contacts.md
   label: Contacts
-  match: "**/*"
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
