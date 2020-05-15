@@ -43,6 +43,7 @@ title = "Rafael Morais"
     AuthorName = "Rafael Morais"
     Description = "Most of the time backend developer, and occasionally a creative."
     ShowDatesOnPosts = true
+    mainSections = "blog"
 
 [markup.goldmark.renderer]
     unsafe= true
