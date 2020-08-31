@@ -8,8 +8,6 @@ menu:
     weight: 2
 
 ---
-Most of my work is private code of my company, but I'm starting to do some Open Source code on my freetime. **Check some projects I've been developing:**
-
 Most of my work is private code of my company, but I'm starting to do more Open Source code on my freetime. **Check some projects I've been developing:**
 
 * [**Feal & Feal CLI**](https://github.com/rafmst/feal) - Feal is an API boilerplate that uses Koa with Typescript and MongoDB, with its own CLI tool;
