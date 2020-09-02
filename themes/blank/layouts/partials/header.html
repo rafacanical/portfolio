@@ -1,18 +1,20 @@
 <header>
-	<nav>
-		<ul>
-            <li><a href="{{ .Site.BaseURL }}">Home</a></li>
-			{{ range .Site.Menus.main }}
-			<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-			{{ end }}
-		</ul>
-	</nav>
-	<nav class="socials">
-		<ul>
-			{{ range .Site.Menus.socials }}
-				<li><a href="{{ .URL | relURL }}" target="_blank">{{ .Pre | safeHTML }}</a></li>
-			{{ end }}
-		</ul>
-	</nav>
-	<div class="clearfix"></div>
+  <nav>
+    <ul>
+      <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+      {{ range .Site.Menus.main }}
+      <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+      {{ end }}
+    </ul>
+  </nav>
+  <nav class="socials">
+    <ul>
+      {{ range .Site.Menus.socials }}
+      <li>
+        <a href="{{ .URL | relURL }}" target="_blank">{{ .Pre | safeHTML }}</a>
+      </li>
+      {{ end }}
+    </ul>
+  </nav>
+  <div class="clearfix"></div>
 </header>

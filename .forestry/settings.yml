@@ -1,49 +1,50 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: 
-webhook_url: 
+admin_path:
+webhook_url:
 sections:
-- type: heading
-  label: Content
-- type: directory
-  path: content/blog
-  label: Blog posts
-  create: all
-  match: "**/*"
-  templates:
-  - blog-post
-- type: directory
-  path: content/sketches
-  label: Sketches
-  create: documents
-  match: "**/*"
-  templates:
-  - sketches
-- type: heading
-  label: Pages
-- type: document
-  path: content/about.md
-  label: About
-- type: document
-  path: content/projects.md
-  label: Projects
-- type: document
-  path: content/contacts.md
-  label: Contacts
+  - type: heading
+    label: Content
+  - type: directory
+    path: content/blog
+    label: Blog posts
+    create: all
+    match: "**/*"
+    templates:
+      - blog-post
+  - type: directory
+    path: content/gallery
+    label: Gallery
+    create: documents
+    match: "**/*"
+    templates:
+      - gallery
+  - type: heading
+    label: Pages
+  - type: document
+    path: content/about.md
+    label: About
+  - type: document
+    path: content/projects.md
+    label: Projects
+  - type: document
+    path: content/contacts.md
+    label: Contacts
 upload_dir: static/uploads
 public_path: "/uploads"
-front_matter_path: ''
+front_matter_path: ""
 use_front_matter_path: false
 file_template: ":filename:"
 build:
   preview_env:
-  - HUGO_ENV=staging
-  - HUGO_VERSION=0.63.2
+    - HUGO_ENV=staging
+    - HUGO_VERSION=0.63.2
   preview_output_directory: public
   preview_docker_image: forestryio/hugo:latest
   mount_path: "/srv"
   working_dir: "/srv"
-  instant_preview_command: hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk
+  instant_preview_command:
+    hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk
     -d public
 version: 0.63.2

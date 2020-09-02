@@ -15,9 +15,9 @@ title = "Rafael Morais"
     tabWidth = 4
 
 [[menu.main]]
-    identifier = "sketches"
-    name = "Sketches"
-    url = "/sketches/"
+    identifier = "gallery"
+    name = "Gallery"
+    url = "/gallery/"
     weight = 3
 
 [[menu.socials]]
