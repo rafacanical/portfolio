@@ -8,14 +8,18 @@ sections:
   label: Content
 - type: directory
   path: content/blog
-  label: Blog
+  label: Blog posts
   create: all
   match: "**/*"
+  templates:
+  - blog-post
 - type: directory
   path: content/sketches
   label: Sketches
   create: documents
   match: "**/*"
+  templates:
+  - sketches
 - type: heading
   label: Pages
 - type: document
