@@ -13,3 +13,4 @@ fields:
   label: tags
 pages:
 - content/blog/create-a-simple-cli-tool-with-nim.md
+- content/blog/use-nodemon-with-nim-language-project.md
