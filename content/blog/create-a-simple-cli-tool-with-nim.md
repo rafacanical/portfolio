@@ -1,6 +1,5 @@
 +++
 date = 2020-09-04T09:05:00Z
-draft = true
 tags = ["Guide", "Nim"]
 title = "Nim for beginners #1 Introduction & Basics"
 
