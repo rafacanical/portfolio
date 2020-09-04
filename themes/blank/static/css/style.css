@@ -194,8 +194,8 @@ blockquote {
 ul code,
 p code {
   font-family: "Fira Mono", monospaced !important;
-  background-color: #f4bf75;
-  color: #151515;
+  background-color: #252525;
+  color: #f4bf75;
   padding: 2px 4px;
   border-radius: 3px;
   font-size: 14px;
