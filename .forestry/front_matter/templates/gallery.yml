@@ -3,21 +3,21 @@ label: Sketch
 hide_body: true
 display_field: title
 fields:
-  - type: datetime
-    name: date
-    label: date
-  - type: file
-    name: image
-    label: image
-  - name: title
-    type: text
-    config:
-      required: false
-    label: title
+- type: datetime
+  name: date
+  label: date
+- type: file
+  name: image
+  label: image
+- name: title
+  type: text
+  config:
+    required: false
+  label: title
 pages:
-  - content/gallery/doodles.md
-  - content/gallery/lofoten.md
-  - content/gallery/musa.md
-  - content/gallery/observatory.md
-  - content/gallery/pennpen.md
-  - content/gallery/roxannecome.md
+- content/gallery/doodles.md
+- content/gallery/lofoten.md
+- content/gallery/musa.md
+- content/gallery/observatory.md
+- content/gallery/pennpen.md
+- content/gallery/roxannecome.md
