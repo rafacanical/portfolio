@@ -14,3 +14,5 @@ fields:
   config:
     required: false
   label: title
+pages:
+- content/gallery/facelessman.md
