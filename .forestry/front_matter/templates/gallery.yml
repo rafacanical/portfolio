@@ -15,6 +15,7 @@ fields:
     required: false
   label: title
 pages:
+- content/gallery/cave-insect.md
 - content/gallery/facelessman.md
 - content/gallery/green-monster.md
 - content/gallery/lazers.md
