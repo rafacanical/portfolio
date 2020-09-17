@@ -15,6 +15,7 @@ fields:
     required: false
   label: title
 pages:
+- content/gallery/auto-retrato.md
 - content/gallery/cave-insect.md
 - content/gallery/facelessman.md
 - content/gallery/fogos-de-santelmo.md
