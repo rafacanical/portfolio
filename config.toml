@@ -1,6 +1,6 @@
 baseURL = "http://rafael.no/"
 languageCode = "en-gb"
-paginate = 10
+paginate = 12
 theme = "blank"
 title = "Rafael Morais"
 

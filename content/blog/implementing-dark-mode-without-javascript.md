@@ -1,7 +1,7 @@
 ---
 title: "Implementing Dark Mode without Javascript"
 date: 2019-08-23T15:00:15+01:00
-tags: ["Styling", "Dark Mode"]
+tags: ["CSS"]
 draft: false
 ---
 
@@ -13,12 +13,12 @@ First things first. We need to create a boilerplate for testing the code. I'm us
 
 ```html
 <body>
-    <input type="checkbox" id="toggleMode" />
-    <label for="toggleMode" class="toggleDark">Dark Mode</label>
-    <label for="toggleMode" class="toggleLight">Light Mode</label>
-    <div id="container">
-        <!-- your code should be here -->
-    </div>
+  <input type="checkbox" id="toggleMode" />
+  <label for="toggleMode" class="toggleDark">Dark Mode</label>
+  <label for="toggleMode" class="toggleLight">Light Mode</label>
+  <div id="container">
+    <!-- your code should be here -->
+  </div>
 </body>
 ```
 
@@ -29,9 +29,9 @@ It is really important to have the input followed by the label on the top level 
 To achieve this we will use CSS variables in the root pseudo selector and we set our light mode colors first, because in this case, the light mode will be the default one.
 
 ```css
-:root{
-    --bg: #ffffff;
-    --text: #000000;
+:root {
+  --bg: #ffffff;
+  --text: #000000;
 }
 ```
 
@@ -42,21 +42,21 @@ The default light mode basically is a white background with black text, just a s
 As you may already guessed, we will use the `:checked` pseudo-selector to achieve the toggle effects. We need to differentiate the styles when the input is checked and when it isn't. By default when the input is not checked it means we are currently viewing the light mode, when it is checked we are suposed to view the dark mode.
 
 ```css
-#toggleMode:checked ~ #container{
-    --bg: #000000;
-    --text: #FFFFFF;
+#toggleMode:checked ~ #container {
+  --bg: #000000;
+  --text: #ffffff;
 }
 
-#container{
-    background-color: var(--bg);
+#container {
+  background-color: var(--bg);
 }
 
-p{
-    color: var(--text);
+p {
+  color: var(--text);
 }
 ```
 
-This line of code basically means, when the `#toggleMode` is `checked` look for the next sibling with the id `container`. Now everything inside `#container` will have new variable values, because we are using it as our "body" tag. 
+This line of code basically means, when the `#toggleMode` is `checked` look for the next sibling with the id `container`. Now everything inside `#container` will have new variable values, because we are using it as our "body" tag.
 
 ## Conclusion
 

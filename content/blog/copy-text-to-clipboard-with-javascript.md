@@ -1,7 +1,7 @@
 ---
 title: "Copy text to clipboard with Javascript"
 date: 2020-01-24T10:02:52+01:00
-tags: ["JavaScript", "Tips"]
+tags: ["JavaScript"]
 draft: false
 ---
 
@@ -9,17 +9,17 @@ One thing that I find myself searching for from time to time, is how to copy a s
 
 There are some ways to achieve this, but what I found to be the easiest is to follow this steps:
 
--   Create and append a `<textarea>` element to the DOM;
--   Set the `value` of the `<textarea>` , to the desired content that we want our user to copy;
--   Use this function, `HTMLInputElement.select()`  to select the content;
--   Use another function to copy the selected text, `Document.execCommand('copy')` ;
--   In the, just delete that `<textarea>` .
+- Create and append a `<textarea>` element to the DOM;
+- Set the `value` of the `<textarea>` , to the desired content that we want our user to copy;
+- Use this function, `HTMLInputElement.select()` to select the content;
+- Use another function to copy the selected text, `Document.execCommand('copy')` ;
+- In the, just delete that `<textarea>` .
 
 This can be achieved with this:
 
 ```
 const copyToClipboard = text => {
-  // Create textarea  
+  // Create textarea
   const ta = document.createElement('textarea');
   // Add your value to it
   ta.value = text;
@@ -38,7 +38,7 @@ For those out there who are not familiar with this Javascript syntax, I'll give 
 
 ```
 var copyToClipboard = function(text) {
-  // Create textarea  
+  // Create textarea
   var ta = document.createElement('textarea');
   // Add your value to it
   ta.value = text;

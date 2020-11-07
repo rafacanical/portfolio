@@ -1,9 +1,10 @@
 +++
 date = 2020-09-04T09:05:00Z
-tags = ["Guide", "Nim"]
+tags = ["Nim"]
 title = "Nim for beginners #1 Introduction & Basics"
 
 +++
+
 ## What is Nim?
 
 The best way to describe Nim, is just by quoting their own description.
@@ -26,14 +27,14 @@ On my Windows machine I installed it with:
 choco install nim
 ```
 
-For other instructions on how to install, simply go to the  [downloads page](https://nim-lang.org/install.html)  on Nim's website. When you're done installing, we can check if everything is installed properly by check the version on the terminal with the following commands:
+For other instructions on how to install, simply go to the [downloads page](https://nim-lang.org/install.html) on Nim's website. When you're done installing, we can check if everything is installed properly by check the version on the terminal with the following commands:
 
 ```js
 // Get installed version of Nim
-nim -v
+nim - v;
 
 // Version of Nim package manager
-nimble -v
+nimble - v;
 ```
 
 ## Hello World example
@@ -60,4 +61,3 @@ echo "My name is Rafael ", "I am 26."
 ```
 
 This will print two lines, one with `Hello World`, and another line containing `My name is Rafael. I am 26.`. Feel free to test more on your own.
-

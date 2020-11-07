@@ -1,7 +1,8 @@
 ---
 title: "Simple grayscale SASS mixin"
 date: 2019-03-16T15:00:15+01:00
-tags: ["Styling", "SASS"]
+tags:
+  - SASS
 draft: false
 ---
 
@@ -9,17 +10,17 @@ Many many times, we look on the web for a simple way to give a black and white f
 
 ```scss
 @mixin grayscale_element($value) {
-    -webkit-filter: #{"grayscale(#{$value})"};
-    -moz-filter: #{"grayscale(#{$value})"};
-    filter:#{"grayscale(#{$value})"};
+  -webkit-filter: #{"grayscale(#{$value})"};
+  -moz-filter: #{"grayscale(#{$value})"};
+  filter: #{"grayscale(#{$value})"};
 }
 
 .grayscale {
-    @include grayscale_element(100%);
-    transition: all 200ms ease-in-out;
-    &:hover {
-        @include grayscale_element(0);
-    }
+  @include grayscale_element(100%);
+  transition: all 200ms ease-in-out;
+  &:hover {
+    @include grayscale_element(0);
+  }
 }
 ```
 
@@ -29,23 +30,23 @@ Your preprocessor compiler, will output something like this:
 
 ```css
 .grayscale {
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    filter: grayscale(100%);
-    transition: all 200ms ease-in-out;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: all 200ms ease-in-out;
 }
 
 .grayscale:hover {
-    -webkit-filter: grayscale(0);
-    -moz-filter: grayscale(0);
-    filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  filter: grayscale(0);
 }
 ```
 
 Now, for the final touch you just have to apply it to some image, by doing the following:
 
 ```html
-<img src="path/to/image.jpg" class="grayscale">
+<img src="path/to/image.jpg" class="grayscale" />
 ```
 
 So this how you use a SASS mixin to give your images a grayscale effect.

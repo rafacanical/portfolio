@@ -1,9 +1,14 @@
+{{ define "mainClass" }}home{{ end }}
+
 {{ define "main" }}
+	{{ partial "header" . }}
 	<main>
 		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
-		{{ range $paginator.Pages }}
-			{{ .Render "summary" }}
-		{{ end }}
+		<div class="squares">
+			{{ range $paginator.Pages }}
+				{{ .Render "summary" }}
+			{{ end }}
+		</div>
 		{{ partial "pagination.html" . }}
 	</main>
 {{ end }}

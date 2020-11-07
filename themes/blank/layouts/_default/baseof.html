@@ -12,18 +12,16 @@
 	{{ with .OutputFormats.Get "RSS" -}}
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 	{{- end }}
-	<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/tomorrow-night.min.css">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/atelier-lakeside-light.min.css">
 	<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/highlight.min.js"></script>
 	<script charset="UTF-8"
  src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/nim.min.js"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
-    <div id="main">
-			<img src="/uploads/eu.png" class="logo" alt="" />
-        {{ partial "header" . }}
-        {{ block "main" . }}{{ end }}
-        {{ partial "footer" . }}
+    <div id="main" class="{{ block "mainClass" . }}{{ end }}">
+			{{ block "main" . }}{{ end }}
+			{{ partial "footer" . }}
     </div>
 </body>
 </html>

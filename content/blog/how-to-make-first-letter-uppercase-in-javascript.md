@@ -1,7 +1,7 @@
 ---
 title: "How to Make First Letter Uppercase in Javascript"
 date: 2019-12-14T16:02:52+01:00
-tags: ["JavaScript", "Tips"]
+tags: ["JavaScript"]
 draft: false
 ---
 

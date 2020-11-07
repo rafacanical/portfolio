@@ -1,7 +1,19 @@
+{{ define "mainClass" }}post{{ end }}
+
 {{ define "main" }}
 	<main>
+		<div class="single-menu">
+			<div class="post-info">
+				<h1>{{ .Title }}</h1>
+			</div>
+			<ul>
+				<li><a href="{{ .Site.BaseURL }}">Home</a></li>
+				{{ range .Site.Menus.main }}
+					<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+				{{ end }}
+			</ul>
+		</div>
 		<article class="single-article">
-			<h1>Gallery</h1>
 			<div class="images-row">
 				{{ range .Pages }}
 					<div class="responsive-img">

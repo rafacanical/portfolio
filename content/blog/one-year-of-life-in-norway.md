@@ -1,7 +1,7 @@
 ---
 title: "One Year of Life in Norway"
 date: 2019-12-08T12:26:51+01:00
-tags: ['Technologies', 'Retrospective']
+tags: ["Thoughts"]
 draft: false
 ---
 
@@ -9,7 +9,7 @@ For those who don't know me, I moved to Norway last January. This post isn't abo
 
 ## Company differences
 
-There aren't so many differences to begin with, both my previous and my current company are small companies, with a small team, with Intutor (current company) having a slightly bigger team. I would say the difference is this small team works with big projects, one of them holds 70% marketshare, and here I'm more focused on the project I'm working on. 
+There aren't so many differences to begin with, both my previous and my current company are small companies, with a small team, with Intutor (current company) having a slightly bigger team. I would say the difference is this small team works with big projects, one of them holds 70% marketshare, and here I'm more focused on the project I'm working on.
 
 At Velcro(previous company) every week I had a different website to do, different client, different everything and after a while I started to hate that. I felt like my work was not important at all, because after a week everyone would forget about that website, unless some bug creeped out.
 

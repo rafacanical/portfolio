@@ -1,24 +1,13 @@
-<article class="home-post">
-    <div class="date">
-        <time>{{ .Date.Format "January 2, 2006" }}</time>
-    </div>
-    <div class="content">
+<a href="{{ .Permalink }}" class="home-post">
+    <div class="container">
         <div class="tags">
             {{ range $i, $e := .Params.tags }}
-                {{ if $i }}
-                <span>, </span>
-                {{ end }}
-                <a href="{{ "/tags/" | relLangURL }}{{ $e | urlize }}" class="tag">{{ $e }}</a>
+                <span class="tag">{{ $e }}</span>
             {{ end }}
         </div>
-        <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-        <div class="summary">
-            {{ if gt (len .Summary) 240 }}
-                {{slicestr .Summary 0 240}}...
-            {{ end }}
-            {{ if le (len .Summary) 240 }}
-                <p>{{ .Summary }}</p>
-            {{ end }}
+        <time>{{ .Date.Format "January 2, 2006" }}</time>
+        <div class="content">
+            <h1>{{ .Title }}</h1>
         </div>
     </div>
-</article>
+</a>
