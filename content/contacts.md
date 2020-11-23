@@ -11,6 +11,6 @@ menu:
 You can reach me by any of my social networks. 
 Or by email at rafaelcanical[at]gmail.com.
 
-* [Github](https://github.com/rafamrs)
-* [Twitter](https://twitter.com/rafmrs_)
+* [Github](https://github.com/rafmst)
+* [Twitter](https://twitter.com/rafmst)
 * [LinkedIn](https://www.linkedin.com/in/rafmrs)
