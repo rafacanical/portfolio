@@ -1,6 +1,5 @@
 +++
 date = 2020-11-24T14:00:00Z
-draft = true
 tags = ["Expo"]
 title = "4 benefits of using Expo"
 
