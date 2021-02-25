@@ -1,6 +1,5 @@
 +++
 date = 2021-02-25T09:15:00Z
-draft = true
 tags = ["Go"]
 title = "Go function to check if some string contains prefix"
 
