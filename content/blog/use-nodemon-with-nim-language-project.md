@@ -1,7 +1,7 @@
 +++
 date = 2021-02-25T09:15:00Z
 tags = ["Go"]
-title = "Go function to check if some string contains prefix"
+title = "Go function to check if string contains prefix"
 
 +++
 This is how to quickly check if a certain string contains a specific prefix. This is usefull when you're checking commands for example.
