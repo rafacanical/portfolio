@@ -1,7 +1,7 @@
 +++
 date = 2020-11-24T14:00:00Z
 tags = ["Expo"]
-title = "4 benefits of using Expo"
+title = "4 benefits of using Expo teste"
 
 +++
 If you clicked on this article, chances are you already know what  [Expo](https://expo.io/)  is, but if actually don't know let's say it is a set of components and tools that extend React Native and facilitate the development of mobile apps with React Native.
