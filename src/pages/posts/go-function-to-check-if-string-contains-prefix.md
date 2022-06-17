@@ -1,7 +1,9 @@
 ---
-title: 'Go function to check if string contains prefix'
-publishDate: 2021-02-25T09:15:00Z
-tag: Go
+setup: ''
+title: Go function to check if string contains prefix
+publishdate: 25 Feb 2021
+description: This is how to quickly check if a certain string contains a specific prefix. This is usefull when you're checking commands for example.
+layout: ../../layouts/BlogPost.astro
 ---
 
 This is how to quickly check if a certain string contains a specific prefix. This is usefull when you're checking commands for example.

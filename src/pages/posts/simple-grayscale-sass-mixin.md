@@ -1,7 +1,9 @@
 ---
-title: 'Simple grayscale SASS mixin'
-publishDate: 2019-03-16T15:00:15+01:00
-tag: SASS
+setup: ''
+title: Simple grayscale SASS mixin
+publishdate: 16 Mar 2019
+description: Many many times, we look on the web for a simple way to give a black and white filter to images, with pure css. Now that SASS and other preprocessors are getting bigger and bigger, everyone starts to look how to do this with SASS. In this example I will give you the code with SCSS extension, since its becoming more popular then the first syntax.
+layout: ../../layouts/BlogPost.astro
 ---
 
 Many many times, we look on the web for a simple way to give a black and white filter to images, with pure css. Now that SASS and other preprocessors are getting bigger and bigger, everyone starts to look how to do this with SASS. In this example I will give you the code with SCSS extension, since its becoming more popular then the first syntax.

@@ -1,7 +1,9 @@
 ---
-title: 'One Year of Life in Norway'
-publishDate: 2019-12-08T12:26:51+01:00
-tag: Toughts
+setup: ''
+title: One Year of Life in Norway
+publishdate: 8 Dec 2019
+description: For those who don't know me, I moved to Norway last January. This post isn't about the differences between Norway and Portugal, but more focused on the type of work I'm doing right know. How I jumped from a developer that mostly does enterprise websites to a developer focused on one big web app and one big mobile app.
+layout: ../../layouts/BlogPost.astro
 ---
 
 For those who don't know me, I moved to Norway last January. This post isn't about the differences between Norway and Portugal, but more focused on the type of work I'm doing right know. How I jumped from a developer that mostly does enterprise websites to a developer focused on one big web app and one big mobile app.

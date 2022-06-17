@@ -2,7 +2,8 @@
 setup: ''
 title: 4 benefits of using Expo
 publishdate: 4 Apr 2021
-description: ''
+description: If you clicked on this article, chances are you already know what Expo is, but if actually don't know let's say it is a set of components and tools that extend React Native and facilitate the development of mobile apps with React Native.
+layout: ../../layouts/BlogPost.astro
 ---
 
 If you clicked on this article, chances are you already know what [Expo](https://expo.io/) is, but if actually don't know let's say it is a set of components and tools that extend React Native and facilitate the development of mobile apps with React Native.

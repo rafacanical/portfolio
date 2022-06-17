@@ -1,7 +1,9 @@
 ---
-title: 'Copy text to clipboard with Javascript'
-publishDate: 2020-01-24T10:02:52+01:00
-tag: JS
+setup: ''
+title: Copy text to clipboard with Javascript
+publishdate: 24 Jan 2020
+description: One thing that I find myself searching for from time to time, is how to copy a specific text on my app to the clipboard, when the user just clicks on a button or some action occured. My most recent example, was to copy the current IP of the machine, without having to select the text and hit Control + C or Command + C. Basically copying the text, just by pressing a single button.
+layout: ../../layouts/BlogPost.astro
 ---
 
 One thing that I find myself searching for from time to time, is how to copy a specific text on my app to the clipboard, when the user just clicks on a button or some action occured. My most recent example, was to copy the current IP of the machine, without having to select the text and hit Control + C or Command + C. Basically copying the text, just by pressing a single button.
@@ -16,45 +18,45 @@ There are some ways to achieve this, but what I found to be the easiest is to fo
 
 This can be achieved with this:
 
-```
-const copyToClipboard = text => {
+```js
+const copyToClipboard = (text) => {
   // Create textarea
-  const ta = document.createElement('textarea');
+  const ta = document.createElement('textarea')
   // Add your value to it
-  ta.value = text;
+  ta.value = text
   // Append it to the DOM
-  document.body.appendChild(el);
+  document.body.appendChild(el)
   // Select its contents
-  ta.select();
+  ta.select()
   // Copy the selected content
-  document.execCommand('copy');
+  document.execCommand('copy')
   // Removed it when the content is copied
-  document.body.removeChild(ta);
-};
+  document.body.removeChild(ta)
+}
 ```
 
 For those out there who are not familiar with this Javascript syntax, I'll give you something else that you might be more familiar with.
 
-```
-var copyToClipboard = function(text) {
+```js
+var copyToClipboard = function (text) {
   // Create textarea
-  var ta = document.createElement('textarea');
+  var ta = document.createElement('textarea')
   // Add your value to it
-  ta.value = text;
+  ta.value = text
   // Append it to the DOM
-  document.body.appendChild(el);
+  document.body.appendChild(el)
   // Select its contents
-  ta.select();
+  ta.select()
   // Copy the selected content
-  document.execCommand('copy');
+  document.execCommand('copy')
   // Removed it when the content is copied
-  document.body.removeChild(ta);
-};
+  document.body.removeChild(ta)
+}
 ```
 
 Either way, to make this work, you just need to call this newly created function, and pass a parameter to it, with the text you desire your user to copy to the clipboard.
 
-```
-copyToClipboard("192.1.1.168");
+```js
+copyToClipboard('192.1.1.168')
 // If the user pastes now, it will return: 192.1.1.168
 ```
