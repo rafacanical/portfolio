@@ -2,7 +2,7 @@
 setup: ''
 title: Implementing Dark Mode without Javascript
 publishdate: 23 Aug 2019
-description: Why do something like this? Well, its simple, just for the fun of it. You might arguee that everybody has scripts enabled in the browser and I agree with you, so, once again, I did this just for the fun of it and to show, what is to me, the best way to implement a dark mode toggler (in terms of stylesheets).
+description: Why do something like this? Well, its simple, just for the fun of it. You might arguee that everybody has scripts enabled in the browser and I agree with you, so, once again...
 layout: ../../layouts/BlogPost.astro
 ---
 

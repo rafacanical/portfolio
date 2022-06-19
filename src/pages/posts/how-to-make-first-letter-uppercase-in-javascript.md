@@ -2,7 +2,7 @@
 setup: ''
 title: How to Make First Letter Uppercase in Javascript
 publishdate: 14 Dec 2019
-description: If you have the need to uppercase just the first letter of a string in JavaScript like I did, just keep reading this article, because this is for you. There are multiple ways to achieve this, so I'll try to document them the best way I can.
+description: If you have the need to uppercase just the first letter of a string in JavaScript like I did, just keep reading this article, because this is for you. There are multiple ways to achieve this...
 layout: ../../layouts/BlogPost.astro
 ---
 

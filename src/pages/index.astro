@@ -7,7 +7,6 @@ import Header from '../components/Header';
 // Component Script:
 let title = 'Rafael Morais';
 let description = 'Rafael Morais personal portfolio and blog.';
-let permalink = 'https://rafael.no/';
 
 // Data Fetching: List all Markdown posts in the repo.
 
@@ -18,7 +17,7 @@ allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.publishdate).valueOf()
 <html lang="en">
 
 <head>
-  <BaseHead {title} {description} {permalink} />
+  <BaseHead {title} {description} />
 </head>
 
 <body>
@@ -31,8 +30,9 @@ allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.publishdate).valueOf()
       {allPosts.map((p) =>
       <PostPreview post={p} />)}
     </section>
-    <br>
-    © {new Date().getFullYear()} Rafael Morais
+    <div class="text-sm text-gray-500">
+      © {new Date().getFullYear()} Rafael Morais
+    </div>
   </div>
 </body>
 

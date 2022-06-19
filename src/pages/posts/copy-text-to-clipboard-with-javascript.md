@@ -2,7 +2,7 @@
 setup: ''
 title: Copy text to clipboard with Javascript
 publishdate: 24 Jan 2020
-description: One thing that I find myself searching for from time to time, is how to copy a specific text on my app to the clipboard, when the user just clicks on a button or some action occured. My most recent example, was to copy the current IP of the machine, without having to select the text and hit Control + C or Command + C. Basically copying the text, just by pressing a single button.
+description: One thing that I find myself searching for from time to time, is how to copy a specific text on my app to the clipboard, when the user just clicks on a button or some action occured
 layout: ../../layouts/BlogPost.astro
 ---
 

@@ -3,35 +3,39 @@ import React from 'react'
 function Header() {
   return (
     <>
-      <header style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <header className="flex items-center justify-center">
         <img src="/assets/jumping.png" alt="Jumping" width="120px" />
-        <div style={{ flex: 1, marginLeft: 20 }}>
-          <h1 style={{ fontSize: 24, margin: 0, padding: 0, lineHeight: '24px' }}>Rafael Morais</h1>
-          <h2 style={{ fontSize: 18, margin: 0, padding: 0, lineHeight: '18px' }}>Web Developer</h2>
+        <div className="flex-1 ml-6">
+          <h1 className="text-2xl text-gray-900 font-bold">Rafael Morais</h1>
+          <h2 className="text-gray-600 -mt-2">Web Developer</h2>
         </div>
       </header>
 
-      <br />
-      <hr />
-      <nav>
-        <a href="/" style={{ marginRight: 10 }}>
+      <nav className="border-y-2 py-2 mt-6 mb-8">
+        <a href="/" className="mr-4 text-gray-600 text-sm font-medium hover:text-red-600">
           Home
         </a>
-        <a href="/about" style={{ marginRight: 10 }}>
+        <a href="/about" className="mr-4 text-gray-600 text-sm font-medium hover:text-red-600">
           About
         </a>
-        <a href="/projects" style={{ marginRight: 10 }}>
+        <a href="/projects" className="mr-4 text-gray-600 text-sm font-medium hover:text-red-600">
           Projects
         </a>
-        <a href="https://github.com/rafaelcanical" target="_blank" style={{ marginRight: 10 }}>
+        <a
+          href="https://github.com/rafaelcanical"
+          target="_blank"
+          className="mr-4 text-gray-600 text-sm font-medium hover:text-red-600"
+        >
           Github
         </a>
-        <a href="https://twitter.com/rafaelcanical" target="_blank" style={{ marginRight: 10 }}>
+        <a
+          href="https://twitter.com/rafaelcanical"
+          target="_blank"
+          className="text-gray-600 text-sm font-medium hover:text-red-600"
+        >
           Twitter
         </a>
       </nav>
-      <hr />
-      <br />
     </>
   )
 }
