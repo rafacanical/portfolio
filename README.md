@@ -1,54 +1,27 @@
-# Astro Starter Kit: Blog
+# React + TypeScript + Vite
 
-```
-npm init astro -- --template blog
-```
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)
+Currently, two official plugins are available:
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-Features:
+## Expanding the ESLint configuration
 
-- ✅ SEO-friendly setup with canonical URLs and OpenGraph data
-- ✅ Full Markdown support
-- ✅ RSS 2.0 generation
-- ✅ Sitemap.xml generation
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-## 🚀 Project Structure
+- Configure the top-level `parserOptions` property like this:
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```
-/
-├── public/
-│   ├── robots.txt
-│   └── favicon.ico
-├── src/
-│   ├── components/
-│   │   └── Tour.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+```js
+   parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname,
+   },
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command           | Action                                       |
-|:----------------  |:-------------------------------------------- |
-| `npm install`     | Installs dependencies                        |
-| `npm run dev`     | Starts local dev server at `localhost:3000`  |
-| `npm run build`   | Build your production site to `./dist/`      |
-| `npm run preview` | Preview your build locally, before deploying |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list

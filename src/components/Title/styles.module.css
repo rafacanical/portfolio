@@ -1,0 +1,53 @@
+.container {
+  position: relative;
+}
+
+.decoration {
+  font-size: 20px;
+  font-family: var(--mono);
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--text);
+  transform-origin: 0 0;
+  transform: rotate(-90deg) !important;
+  position: absolute;
+  left: -40px;
+  bottom: -14px;
+}
+
+.title {
+  font-size: 142px;
+  line-height: 130px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+@media (max-width: 940px) {
+  .title {
+    font-size: 100px;
+    line-height: 80px;
+  }
+  .decoration {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 654px) {
+  .title {
+    font-size: 55px;
+    line-height: 54px;
+  }
+  .decoration {
+    font-size: 14px;
+    transform: rotate(0) !important;
+    position: absolute;
+    left: 6px;
+    bottom: -28px;
+  }
+}
+
+@media (max-width: 474px) {
+  .title {
+    font-weight: 600;
+  }
+}

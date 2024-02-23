@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.link {
+  height: 56px;
+  width: 56px;
+  background-color: var(--icons);
+  border-radius: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(1);
+}
+
+.link svg path {
+  stroke: var(--stroke);
+}
+
+.link:hover {
+  background-color: var(--accent1);
+}
+
+.link:hover svg path {
+  stroke: var(--accent3);
+}
+
+@media (max-width: 654px) {
+  .link {
+    height: 40px;
+    width: 40px;
+  }
+  .link svg {
+    width: 20px;
+    height: 20px;
+  }
+}

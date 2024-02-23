@@ -1,0 +1,46 @@
+.container {
+  margin-top: 100px;
+  margin-left: 15vw;
+}
+
+.container h2 {
+  color: var(--text);
+  font-size: 20px;
+  font-weight: 800;
+  font-family: var(--sans);
+  text-transform: uppercase;
+}
+
+.container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.container a {
+  display: inline-block;
+  color: var(--text);
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--sans);
+  padding: 8px 0;
+  border-bottom: 2px dotted transparent;
+  text-decoration: none;
+}
+
+.container a:hover {
+  border-bottom: 2px dotted var(--text);
+}
+
+@media (max-width: 654px) {
+  .container {
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 474px) {
+  .container {
+    margin-left: 30px;
+  }
+}
