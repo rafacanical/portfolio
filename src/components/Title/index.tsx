@@ -7,7 +7,7 @@ function Title() {
       <h1 className={styles.title}>
         Rafa
         <br />
-        Caniçal
+        Morais
       </h1>
     </div>
   )
