@@ -1,0 +1,27 @@
+---
+import moment from "moment";
+const year = moment().year();
+---
+
+<footer>
+  <div>
+    © Rafa Morais, {year}
+  </div>
+  <div>Less is more</div>
+</footer>
+
+<style>
+  footer {
+    max-width: 850px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 80px;
+    border-top: 1px solid #eee;
+    justify-content: space-between;
+    height: 50px;
+    font-size: 14px;
+    color: var(--text-color);
+    font-weight: 300;
+  }
+</style>

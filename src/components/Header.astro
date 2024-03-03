@@ -1,0 +1,106 @@
+---
+import { Image } from "astro:assets";
+import avatar from "../assets/avatar.png";
+---
+
+<header>
+  <div class="avatar-name">
+    <Image src={avatar} alt="Rafa's Portrait" quality="max" width={40} height={40} />
+    <div class="name">Rafa Morais</div>
+  </div>
+  <ul class="socials">
+    <li>
+      <a href="https://github.com/rafatrace" target="_blank">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M7.50008 15.8334C3.33341 17.0834 3.33341 13.75 1.66675 13.3334M13.3334 18.3334V15.1084C13.3647 14.711 13.311 14.3115 13.1759 13.9365C13.0409 13.5615 12.8275 13.2195 12.5501 12.9334C15.1667 12.6417 17.9167 11.65 17.9167 7.10003C17.9165 5.93655 17.469 4.8177 16.6667 3.97503C17.0466 2.95712 17.0198 1.83199 16.5917 0.833363C16.5917 0.833363 15.6084 0.541696 13.3334 2.0667C11.4234 1.54905 9.41007 1.54905 7.50008 2.0667C5.22508 0.541696 4.24175 0.833363 4.24175 0.833363C3.81373 1.83199 3.78687 2.95712 4.16675 3.97503C3.35852 4.82395 2.91052 5.95292 2.91675 7.12503C2.91675 11.6417 5.66675 12.6334 8.28341 12.9584C8.00925 13.2417 7.7978 13.5795 7.66284 13.95C7.52788 14.3204 7.47242 14.7151 7.50008 15.1084V18.3334"
+            stroke="#999999"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a href="https://twitter.com/rafatrace" target="_blank">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M19.1666 2.50008C18.3686 3.06298 17.485 3.4935 16.5499 3.77508C16.048 3.198 15.381 2.78899 14.6391 2.60335C13.8972 2.41771 13.1162 2.46441 12.4017 2.73712C11.6871 3.00984 11.0736 3.49541 10.6441 4.12818C10.2145 4.76094 9.98967 5.51036 9.99992 6.27508V7.10841C8.53545 7.14639 7.08431 6.82159 5.77576 6.16295C4.46721 5.50431 3.34185 4.53228 2.49992 3.33341C2.49992 3.33341 -0.833415 10.8334 6.66659 14.1667C4.95036 15.3317 2.90588 15.9159 0.833252 15.8334C8.33325 20.0001 17.4999 15.8334 17.4999 6.25008C17.4992 6.01796 17.4768 5.78641 17.4333 5.55841C18.2838 4.71966 18.8839 3.66067 19.1666 2.50008Z"
+            stroke="#999999"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/rafatrace/" target="_blank">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.3333 6.66675C14.6593 6.66675 15.9311 7.19353 16.8688 8.13121C17.8065 9.0689 18.3333 10.3407 18.3333 11.6667V17.5001H14.9999V11.6667C14.9999 11.2247 14.8243 10.8008 14.5118 10.4882C14.1992 10.1757 13.7753 10.0001 13.3333 10.0001C12.8912 10.0001 12.4673 10.1757 12.1547 10.4882C11.8422 10.8008 11.6666 11.2247 11.6666 11.6667V17.5001H8.33325V11.6667C8.33325 10.3407 8.86004 9.0689 9.79772 8.13121C10.7354 7.19353 12.0072 6.66675 13.3333 6.66675Z"
+            stroke="#999999"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+          <path
+            d="M5.00008 7.5H1.66675V17.5H5.00008V7.5Z"
+            stroke="#999999"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+          <path
+            d="M3.33341 5.00008C4.25389 5.00008 5.00008 4.25389 5.00008 3.33341C5.00008 2.41294 4.25389 1.66675 3.33341 1.66675C2.41294 1.66675 1.66675 2.41294 1.66675 3.33341C1.66675 4.25389 2.41294 5.00008 3.33341 5.00008Z"
+            stroke="#999999"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</header>
+
+<style>
+  header {
+    max-width: 850px;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+  }
+
+  .avatar-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .name {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+  }
+
+  .socials {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .socials a {
+    padding: 5px;
+  }
+
+  .socials a svg path {
+    stroke: var(--text-color);
+  }
+
+  .socials a:hover svg path {
+    stroke: var(--titles-color);
+  }
+</style>

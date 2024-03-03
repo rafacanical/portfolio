@@ -1,0 +1,47 @@
+---
+import type { Code, Debug } from "astro:components";
+import Layout from "../layouts/Layout.astro";
+import Project from "../components/Project.astro";
+import { getCollection } from "astro:content";
+
+const allProjects = await getCollection("projects");
+---
+
+<Layout title="Rafa Morais - Portfolio">
+  <div>
+    <main>
+      <h1>Minimalist, App developer,<br />Backend developer, explorer.</h1>
+      <p>
+        I’m Rafa Morais, an experienced app developer from Portugal living in Norway.<br />If you’re curious about my
+        work, check my projects down bellow.
+      </p>
+    </main>
+
+    <div class="projects">
+      {allProjects.map((project) => <Project {...{ project }} />)}
+    </div>
+  </div>
+</Layout>
+
+<style>
+  h1 {
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin: 0 auto 0.3em;
+    font-size: 2.6rem;
+    margin-top: 70px;
+  }
+  p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-color);
+    font-weight: 300;
+    margin-top: 20px;
+  }
+  .projects {
+    max-width: 580px;
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+</style>

@@ -1,0 +1,54 @@
+---
+import moment from "moment";
+
+const { project } = Astro.props;
+const date = moment(project.data.date).format("MMMM D, YYYY");
+
+const { link, image, title } = project.data;
+---
+
+<a href={link} target="_blank" class="link">
+  <img src={image.src} alt={image.alt} />
+  <div>
+    <h2>{title}</h2>
+    <p>{date}</p>
+  </div>
+</a>
+
+<style>
+  .link {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    transition: transform 200ms ease-in-out;
+    transform: scale(1, 1);
+    text-decoration: none;
+    margin-bottom: 40px;
+  }
+
+  .link:hover {
+    transform: scale(1.02, 1.02);
+  }
+
+  .link img {
+    max-width: 206px;
+    aspect-ratio: 206/150;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  .link h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--titles-color);
+    margin: 0;
+  }
+
+  .link p {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--text-color);
+    margin: 0;
+    margin-top: 10px;
+  }
+</style>
