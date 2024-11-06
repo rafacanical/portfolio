@@ -59,7 +59,7 @@ main {
   border: 2px solid white;
 }
 
-#header h2 {
+#header h1 {
   margin: 0;
   padding: 0;
   font-size: 26px;
@@ -121,6 +121,7 @@ footer {
 
 .city {
   position: relative;
+  cursor: pointer;
 }
 
 .city:hover:before {
@@ -382,7 +383,7 @@ footer {
   main {
     max-width: 320px;
   }
-  #header h2 {
+  #header h1 {
     font-size: 20px;
   }
   #right {
